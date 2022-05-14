@@ -1,0 +1,5 @@
+project: toml-rs
+target: fuzz_from_to_string
+
+cmds:
+  - cmd: /fuzz_from_to_string
