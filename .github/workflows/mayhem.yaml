@@ -49,7 +49,7 @@ jobs:
           file: Dockerfile.mayhem
 
       - name: Start analysis for fuzz_from_to_string
-        uses: ForAllSecure/mcode-action@v1
+        uses: ForAllSecure/mcode-action@long-runs
         with:
           mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
           args: --image ${{ steps.meta.outputs.tags }} --project ${{ env.PROJECTNAME }} --file ${{ env.MAYHEMFILE }}
